@@ -32,16 +32,15 @@ if (isset($_GET['search-btn'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>curd operation</title>
+    <title>Book List CURD</title>
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
     <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
-        <div class="mb-3" style="padding-left: 7%;padding-right: 7%;">
-            <a style="text-align: center;" href="book_list.php">
-                <h2>Add A Book </h2>
+        <div class="mb-3" > 
+            <a href="book_list.php">
+                <h2> Add Book </h2>
             </a>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Title</label>
@@ -81,7 +80,7 @@ if (isset($_GET['search-btn'])) {
             </div>
 
         </div>
-        <p style="text-align: center;">
+        <p>
             <button type="submit" name="add" class="btn btn-primary">Add</button>
         </p>
     </form>
@@ -90,8 +89,8 @@ if (isset($_GET['search-btn'])) {
     <br>
     <!-- search bar -->
     <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
-        <div class="input-group" style="padding-left: 70%;">
-            <input name="search" type="search" class="form-control rounded" placeholder="Search with book title/isbn" />
+        <div class="input-group" style="padding-left: 17.5%;">
+            <input name="search" type="search" class="form-control rounded" placeholder="Search with isbn" />
             <button name="search-btn" type="submit" class="btn btn-outline-primary">search</button>
         </div>
     </form>
