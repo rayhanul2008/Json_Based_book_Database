@@ -42,19 +42,21 @@ $customer3 = new Customer(
 );
 
 echo "<b> Book_1 </b> <br>";
-echo "Book-1 Title: " .$book1 -> __get("title") ."<br>";
-echo "Book-1 Author: " .$book1 -> __get("author") ."<br>";
-echo "Book-1 ISBN: " .$book1 -> __get("isbn") ."<br>";
+echo "Book-1 Title: " .$book1 -> title ."<br>";
+echo "Book-1 Author: " .$book1 -> author ."<br>";
+echo "Book-1 ISBN: " .$book1 -> isbn ."<br>";
 
-echo "</br> <b> CUSTOMER 1 </b> <br>";
-echo "Customer-1 ID: " .$customer1 -> __get("id") ."<br>";
-echo "Customer-1 First Name: " .$customer1 -> __get("firstname") ."<br>";
-echo "Customer-1 Last Name: " .$customer1 -> __get("lastname") ."<br>";
-echo "Customer-1 Email: " .$customer1 -> __get("email") ."<br>";
-$customer1 -> __set("firstname", "Abdullah");
-$customer1 -> __set("lastname", "Muhammad");
-$customer1 -> __set("email", "islam@gmail.com");
-echo "Customer-1 First Name: " .$customer1 -> __get("firstname") ."<br>";
+echo "<b> Customer_1 </b> <br>";
+echo "Customer-1 ID: " .$customer1 -> id ."<br>";
+echo "Customer-1 First Name: " .$customer1 -> firstname ."<br>";
+echo "Customer-1 Last Name: " .$customer1 -> lastname ."<br>";
+echo "Customer-1 Email: " .$customer1 -> email ."<br>";
+
+
+$customer1 -> firstname = "Rayhanul Islam Mukul";
+$customer1 -> email = "islam@gmail.com";
+echo "Customer-1 First Name: " .$customer1 -> firstname ."<br>";
+echo "Customer-1 Email: " .$customer1 -> email ."<br>";
 
 ?>
 
