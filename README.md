@@ -1,1 +1,1 @@
-# Json_Based_book_Database
+# Library Management System using PHP/MySQLi Demo
